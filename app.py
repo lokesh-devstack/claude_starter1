@@ -8,5 +8,10 @@ def index():
     return render_template("index.html", title="My First Flask Site")
 
 
+@app.route("/about")
+def about():
+    return render_template("about.html", title="About Me")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
